@@ -8,3 +8,7 @@
     app.kubernetes.io/version: "{{ $.Chart.Version }}"
     app.kubernetes.io/managed-by: "{{ $.Release.Service }}"
 {{- end }}
+{{- define "mychart.version" -}}
+app_name: {{ .Chart.Name }}
+app_version: "{{ .Chart.Version }}"
+{{- end -}}

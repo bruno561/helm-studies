@@ -3,6 +3,7 @@ kind: ConfigMap
 metadata:
   name: {{ .Release.Name}}-configmap
 {{- template "mychart.systemlabels" $ }}
+{{ include "mychart.version" . | indent 4}}
 data:
   myvalue: "Sample Config Map"
   costCode: {{ .Values.costCode }}
