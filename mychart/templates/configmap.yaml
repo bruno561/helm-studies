@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name}}-configmap
+{{- template "mychart.systemlabels" $ }}
+data:
+  myvalue: "Sample Config Map"
+  costCode: {{ .Values.costCode }}
+  Zone: {{ quote .Values.infra.zone }}
+  Region: {{ quote .Values.infra.zone }}
+  ProjectCode: {{ upper .Values.projectCode }}
+  Lang Used: |-
+    {{- range $index, $topping := .Values.LangUsed }}
+    - {{ $index }} : {{ $topping }}
+    {{- end }}
