@@ -15,3 +15,5 @@ LangUsed:
   - Scala 
 mysubchart:
   dbhostname: prodmysqlnode
+global:
+  orgdomain: com.muthu4all
