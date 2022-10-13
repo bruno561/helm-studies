@@ -13,3 +13,5 @@ LangUsed:
   - Ruby
   - Jave
   - Scala 
+mysubchart:
+  dbhostname: prodmysqlnode
