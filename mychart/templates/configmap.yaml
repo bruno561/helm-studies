@@ -10,7 +10,7 @@ data:
   Zone: {{ quote .Values.infra.zone }}
   Region: {{ quote .Values.infra.zone }}
   ProjectCode: {{ upper .Values.projectCode }}
-  Lang Used: |-
+  LangUsed: |-
     {{- range $index, $topping := .Values.LangUsed }}
     - {{ $index }} : {{ $topping }}
     {{- end }}
