@@ -9,3 +9,4 @@ To learn more about the release, try:
     $ helm uninstall {{ .Release.Name }}          
 
 #test --amend
+#test 2
