@@ -1,0 +1,47 @@
+apiVersion: v1
+entries:
+  helmpushdemo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-16T09:27:32.82186476-03:00"
+    description: Demo on push plugin
+    digest: dee89c1e9d2951c3286665ce0281ba47af986e59dee54d2ddefa77b5ff64fdff
+    name: helmpushdemo
+    type: application
+    urls:
+    - charts/helmpushdemo-0.1.0.tgz
+    version: 0.1.0
+  myrepo2:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-16T09:12:49.224728919-03:00"
+    description: My Another Chart
+    digest: d5788c86336e102774292865ac544c411b1c65a0737e0ba31ea46a7fc0412c00
+    name: myrepo2
+    type: application
+    urls:
+    - charts/myrepo2-0.1.0.tgz
+    version: 0.1.0
+  repotest:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-16T09:11:54.803737976-03:00"
+    description: Repo Demo in Helm using Chartmuseum Version to 0.0.1
+    digest: 0526dc55371b3ee00cb1c91a806dd5c8cbb8cb580bef5355039bbb6d9ac421bf
+    name: repotest
+    type: application
+    urls:
+    - charts/repotest-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-16T09:11:44.529807063-03:00"
+    description: Repo Demo in Helm using Chartmuseum
+    digest: d7d4a19b4a31b025d4e5dd12f45cbc2c4f1bbf0c2a619dabc6435b91590b09de
+    name: repotest
+    type: application
+    urls:
+    - charts/repotest-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-10-16T09:27:33-03:00"
+serverInfo: {}
