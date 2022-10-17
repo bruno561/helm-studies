@@ -43,5 +43,26 @@ entries:
     urls:
     - charts/repotest-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-16T09:27:33-03:00"
+  upgrade-rlbk:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-16T21:45:06.473327514-03:00"
+    description: A Helm chart for upgrade and rollback details. And add two pods.
+    digest: d4633fc756312f03665106c0a7f9226bed3bea6db10e3cb5c76fbe286be5ece0
+    name: upgrade-rlbk
+    type: application
+    urls:
+    - charts/upgrade-rlbk-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-16T21:21:13.323023644-03:00"
+    description: A Helm chart for upgrade and rollback details
+    digest: 287c29e755ee22c1ced2271b560cd6f366b614a588409b5175fc31b08b0b74d5
+    name: upgrade-rlbk
+    type: application
+    urls:
+    - charts/upgrade-rlbk-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-10-16T21:45:06-03:00"
 serverInfo: {}
