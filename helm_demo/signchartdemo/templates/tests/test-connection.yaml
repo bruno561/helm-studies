@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "signchartdemo.fullname" . }}-test-connection"
+  labels:
+    {{- include "signchartdemo.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "signchartdemo.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
